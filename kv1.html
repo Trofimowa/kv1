@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Квартира в Пинске | Уютное жильё</title>
+    <link rel="stylesheet" href="kv1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <div class="hero">
+            <h1>🏠 Квартира в центре Пинска</h1>
+
+            <div class="address-bar">
+                <div class="address-wrapper">
+                    <div class="address">
+                        <i></i>Адрес: ул. Ясельдовская, 7 </i>
+                    </div>
+                </div>
+                <a href="tel:+375291234567" class="call-button">
+                    📞 Позвонить
+                </a>
+            </div>
+        </div>
+
+        <div class="gallery" id="galleryContainer"></div>
+
+        <div class="sights-section">
+            <div class="sights-title">
+                Ясельдовская — сердце Пинска
+            </div>
+            <div class="sights-sub">
+                Тихий исторический центр. Всё рядом: набережная, музеи, кафе и главные символы города. Пешком 5–15 минут.
+            </div>
+            <div class="sights-grid">
+                <!-- Набережная и река Пина -->
+                <div class="sight-card">
+                    <img class="sight-img" src="images/20190208m1.jpg" alt="Набережная Пины">
+                    <div class="sight-info">
+                        <h3>🏞️ Набережная и река Пина</h3>
+                        <p>Живописное место для прогулок, вид на слияние Пины и Припяти, уютные скамейки.</p>
+                        <span class="sight-distance">🚶 7-10 минут</span>
+                    </div>
+                </div>
+                <!-- Музей Белорусского Полесья -->
+                <div class="sight-card">
+                    <img class="sight-img" src="images/caption.jpg" alt="Музей Полесья">
+                    <div class="sight-info">
+                        <h3>🏛️ Музей Белорусского Полесья</h3>
+                        <p>Здание иезуитского коллегиума XVII века. Огромная коллекция природы и истории.</p>
+                        <span class="sight-distance">🚶 5-7 минут</span>
+                    </div>
+                </div>
+                <!-- Францисканский костёл -->
+                <div class="sight-card">
+                    <img class="sight-img" src="images/d330c486487faa3c093f49ee5430c60a.jpg" alt="Францисканский костёл">
+                    <div class="sight-info">
+                        <h3>⛪ Францисканский костёл</h3>
+                        <p>Величественный храм в стиле барокко с красивыми колоннами внутри. Главная гордость — уникальные резные деревянные алтари XVIII века и старинный орган с полутора тысячами труб.</p>
+                        <span class="sight-distance">🚶 10 минут</span>
+                    </div>
+                </div>
+                <!-- Пешеходная улица Ленина -->
+                <div class="sight-card">
+                    <img class="sight-img" src="images/peshehodnaya_pinsk.jpg" alt="Пешеходная улица">
+                    <div class="sight-info">
+                        <h3>🚶 Пешеходная улица Ленина</h3>
+                        <p>«Музей под открытым небом»: купеческие особняки, старинная брусчатка «трилинка».</p>
+                        <span class="sight-distance">🚶 10 минут</span>
+                    </div>
+                </div>
+                <!-- Бургерная МУМО -->
+                <div class="sight-card">
+                    <img class="sight-img" src="images/eda-burger-gomel-skidka-garripotter-mainpic.jpg" alt="Памятник Пинчуку">
+                    <div class="sight-info">
+                        <h3>🍔 Бургерная «Мумо»</h3>
+                        <p>Самый популярный бургерный в городе. Пицца, стейки, гриль-крылья. В историческом здании на улице Ленина.</p>
+                        <span class="sight-distance">🚶 7 минут</span>
+                    </div>
+                </div>
+                <!-- Кафе Бона Сфорца -->
+                <div class="sight-card">
+                    <img class="sight-img" src="images/8rdhqrnh09y2m2285ehiiwi59nir0f61.jpg" alt="Кафе">
+                    <div class="sight-info">
+                        <h3>🍽️ Кафе «Бона Сфорца»</h3>
+                        <p>Уютное место с видом на костёл. Рекомендуют местную выпечку и кофе.</p>
+                        <span class="sight-distance">🚶 8 минут</span>
+                    </div>
+                </div>
+                <!-- Кафе Лакомка -->
+                <div class="sight-card">
+                    <img class="sight-img" src="images/tort-pavlova-10-luchshih-reczeptov-domashnih-desertov.jpg" alt="Кафе Лакомка">
+                    <div class="sight-info">
+                        <h3>🍰 Кафе «Лакомка»</h3>
+                        <p>Уютное кафе-кондитерская с советской историей. Огромный выбор свежей выпечки и тортов. Вкусно, недорого, по-домашнему.</p>
+                        <span class="sight-distance">🚶 8 минут</span>
+                    </div>
+                </div>
+                <!-- Paragraph кофейня -->
+                <div class="sight-card">
+                    <img class="sight-img" src="images/paragr.jpg" alt="Paragraph кофейня">
+                    <div class="sight-info">
+                        <h3>☕ Paragraph</h3>
+                        <p>Лофт-кофейня на набережной. Халвичный латте, вид на реку, уютный интерьер и отличный кофе.</p>
+                        <span class="sight-distance">🚶 10 минут</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="info-footer">
+            <p>📍 г. Пинск, ул. Ясельдовская 7 · центр культурной столицы<br>
+                📩 Связь по телефону / мессенджеры</p>
+                Viber: +375 (44) 776-17-40</p>
+                Telegram: +375 (29) 368-31-19</p>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" id="closeLightboxBtn">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="увеличенное фото">
+    </div>
+
+    <script>
+        (function() {
+            const photosData = [
+            { url: "images/photo_2026-04-21_11-31-17.jpg", caption: "Просторная гостиная" },
+            { url: "images/photo_2026-04-21_11-31-44.jpg", caption:"Двухместная кровать"},
+            { url: "images/photo_2026-04-21_11-32-14.jpg", caption:"Уютная спальня" },
+            { url: "images/photo_2026-04-21_11-32-22.jpg", caption:"Мягкое освещение" },
+            { url: "images/photo_2026-04-21_11-32-43.jpg", caption:"Функциональная кухня" },
+            { url: "images/photo_2026-04-21_11-32-41.jpg", caption:"Обеденная зона" },
+            { url: "images/photo_2026-04-21_11-33-09.jpg", caption:"Компактный коридор" },
+            { url: "images/photo_2026-04-21_11-33-32.jpg", caption:"Оборудованная ванная" },
+            { url: "images/photo_2026-04-21_11-33-51.jpg", caption:"Раздельный санузел" },
+            { url: "images/photo_2026-04-21_11-34-03.jpg", caption:"Вместительный балкон" },
+            { url: "images/photo_2026-04-21_14-48-30.jpg", caption:"Ухоженный" },
+            { url: "images/photo_2026-04-21_14-50-50.jpg" }
+        ];
+
+            const galleryContainer = document.getElementById('galleryContainer');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const closeBtn = document.getElementById('closeLightboxBtn');
+
+            function renderGallery() {
+                if (!galleryContainer) return;
+                galleryContainer.innerHTML = '';
+                photosData.forEach((photo, idx) => {
+                    const card = document.createElement('div');
+                    card.className = 'photo-card';
+                    card.style.animationDelay = `${idx * 0.03}s`;
+                    
+                    const img = document.createElement('img');
+                    img.src = photo.url;
+                    img.alt = photo.caption;
+                    img.loading = 'lazy';
+                    
+                    const captionDiv = document.createElement('div');
+                    captionDiv.className = 'photo-caption';
+                    captionDiv.textContent = photo.caption;
+                    
+                    card.appendChild(img);
+                    card.appendChild(captionDiv);
+                    
+                    card.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        openLightbox(photo.url, photo.caption);
+                    });
+                    
+                    galleryContainer.appendChild(card);
+                });
+            }
+
+            function openLightbox(imgUrl, altText) {
+                if (lightbox && lightboxImg) {
+                    lightboxImg.src = imgUrl;
+                    lightboxImg.alt = altText;
+                    lightbox.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function closeLightbox() {
+                if (lightbox) {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+            if (lightbox) lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lightbox?.classList.contains('active')) closeLightbox(); });
+
+            renderGallery();
+        })();
+    </script>
+</body>
+</html>
