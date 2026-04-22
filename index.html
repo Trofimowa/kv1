@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Квартира в Пинске | Уютное жильё</title>
-    <link rel="stylesheet" href="kv1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kv1.css">
 </head>
 <body>
     <main class="container">
@@ -16,8 +16,8 @@
 
             <div class="address-bar">
                 <div class="address-wrapper">
-                    <div class="address">
-                        <i></i>Адрес: ул. Ясельдовская, 7 </i>
+                    <div class="address" id="clickableAddress">
+                        <span>🗺 ул. Ясельдовская, 7</span>
                     </div>
                 </div>
                 <a href="tel:+375297761740" class="call-button">
@@ -36,89 +36,80 @@
                 Тихий исторический центр. Всё рядом: набережная, музеи, кафе и главные символы города. Пешком 5–15 минут.
             </div>
             <div class="sights-grid">
-                <!-- Набережная и река Пина -->
                 <div class="sight-card">
-                    <img class="sight-img" src="images/20190208m1.jpg" alt="Набережная Пины">
+                    <img class="sight-img" src="images/20190208m1.jpg" alt="Набережная Пины" loading="lazy">
                     <div class="sight-info">
                         <h3>🏞️ Набережная и река Пина</h3>
                         <p>Живописное место для прогулок, вид на слияние Пины и Припяти, уютные скамейки.</p>
                         <span class="sight-distance">🚶 7-10 минут</span>
                     </div>
                 </div>
-                <!-- Музей Белорусского Полесья -->
                 <div class="sight-card">
-                    <img class="sight-img" src="images/caption.jpg" alt="Музей Полесья">
+                    <img class="sight-img" src="images/caption.jpg" alt="Музей Полесья" loading="lazy">
                     <div class="sight-info">
                         <h3>🏛️ Музей Белорусского Полесья</h3>
                         <p>Здание иезуитского коллегиума XVII века. Огромная коллекция природы и истории.</p>
                         <span class="sight-distance">🚶 5-7 минут</span>
                     </div>
                 </div>
-                <!-- Францисканский костёл -->
                 <div class="sight-card">
-                    <img class="sight-img" src="images/d330c486487faa3c093f49ee5430c60a.jpg" alt="Францисканский костёл">
+                    <img class="sight-img" src="images/d330c486487faa3c093f49ee5430c60a.jpg" alt="Францисканский костёл" loading="lazy">
                     <div class="sight-info">
                         <h3>⛪ Францисканский костёл</h3>
-                        <p>Величественный храм в стиле барокко с красивыми колоннами внутри. Главная гордость — уникальные резные деревянные алтари XVIII века и старинный орган с полутора тысячами труб.</p>
+                        <p>Величественный храм в стиле барокко с уникальными резными деревянными алтарями XVIII века и старинным органом.</p>
                         <span class="sight-distance">🚶 10 минут</span>
                     </div>
                 </div>
-                <!-- Пешеходная улица Ленина -->
                 <div class="sight-card">
-                    <img class="sight-img" src="images/peshehodnaya_pinsk.jpg" alt="Пешеходная улица">
+                    <img class="sight-img" src="images/peshehodnaya_pinsk.jpg" alt="Пешеходная улица" loading="lazy">
                     <div class="sight-info">
                         <h3>🚶 Пешеходная улица Ленина</h3>
                         <p>«Музей под открытым небом»: купеческие особняки, старинная брусчатка «трилинка».</p>
                         <span class="sight-distance">🚶 10 минут</span>
                     </div>
                 </div>
-                <!-- Бургерная МУМО -->
                 <div class="sight-card">
-                    <img class="sight-img" src="images/eda-burger-gomel-skidka-garripotter-mainpic.jpg" alt="Памятник Пинчуку">
+                    <img class="sight-img" src="images/eda-burger-gomel-skidka-garripotter-mainpic.jpg" alt="Бургерная МУМО" loading="lazy">
                     <div class="sight-info">
                         <h3>🍔 Бургерная «Мумо»</h3>
-                        <p>Самый популярный бургерный в городе. Пицца, стейки, гриль-крылья. В историческом здании на улице Ленина.</p>
+                        <p>Самый популярный бургерный в городе. Пицца, стейки, гриль-крылья. В историческом здании.</p>
                         <span class="sight-distance">🚶 7 минут</span>
                     </div>
                 </div>
-                <!-- Кафе Бона Сфорца -->
                 <div class="sight-card">
-                    <img class="sight-img" src="images/8rdhqrnh09y2m2285ehiiwi59nir0f61.jpg" alt="Кафе">
+                    <img class="sight-img" src="images/8rdhqrnh09y2m2285ehiiwi59nir0f61.jpg" alt="Кафе Бона Сфорца" loading="lazy">
                     <div class="sight-info">
                         <h3>🍽️ Кафе «Бона Сфорца»</h3>
                         <p>Уютное место с видом на костёл. Рекомендуют местную выпечку и кофе.</p>
                         <span class="sight-distance">🚶 8 минут</span>
                     </div>
                 </div>
-                <!-- Кафе Лакомка -->
                 <div class="sight-card">
-                    <img class="sight-img" src="images/tort-pavlova-10-luchshih-reczeptov-domashnih-desertov.jpg" alt="Кафе Лакомка">
+                    <img class="sight-img" src="images/tort-pavlova-10-luchshih-reczeptov-domashnih-desertov.jpg" alt="Кафе Лакомка" loading="lazy">
                     <div class="sight-info">
                         <h3>🍰 Кафе «Лакомка»</h3>
-                        <p>Уютное кафе-кондитерская с советской историей. Огромный выбор свежей выпечки и тортов. Вкусно, недорого, по-домашнему.</p>
+                        <p>Уютное кафе-кондитерская с советской историей. Огромный выбор свежей выпечки и тортов.</p>
                         <span class="sight-distance">🚶 8 минут</span>
                     </div>
                 </div>
-                <!-- Paragraph кофейня -->
                 <div class="sight-card">
-                    <img class="sight-img" src="images/paragr.jpg" alt="Paragraph кофейня">
+                    <img class="sight-img" src="images/paragr.jpg" alt="Paragraph кофейня" loading="lazy">
                     <div class="sight-info">
                         <h3>☕ Paragraph</h3>
-                        <p>Лофт-кофейня на набережной. Халвичный латте, вид на реку, уютный интерьер и отличный кофе.</p>
+                        <p>Лофт-кофейня на набережной. Халвичный латте, вид на реку, отличный кофе.</p>
                         <span class="sight-distance">🚶 10 минут</span>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <div class="info-footer">
             <p>📍 г. Пинск, ул. Ясельдовская 7 · центр культурной столицы<br>
-                📩 Связь по телефону / мессенджеры</p>
-                Светлана</p>
-                Viber: +375 (44) 776-17-40</p>
-                Telegram: +375 (29) 368-31-19</p>
-                УНП BA5037461
+            📩 Связь по телефону / мессенджеры</p>
+            Светлана<br>
+            Viber: +375 (44) 776-17-40<br>
+            Telegram: +375 (29) 368-31-19<br>
+            УНП BA5037461
         </div>
     </main>
 
@@ -130,19 +121,19 @@
     <script>
         (function() {
             const photosData = [
-            { url: "images/photo_2026-04-21_11-31-17.jpg", caption: "Просторная гостиная" },
-            { url: "images/photo_2026-04-21_11-31-44.jpg", caption:"Двухместная кровать"},
-            { url: "images/photo_2026-04-21_11-32-14.jpg", caption:"Уютная спальня" },
-            { url: "images/photo_2026-04-21_11-32-22.jpg", caption:"Мягкое освещение" },
-            { url: "images/photo_2026-04-21_11-32-43.jpg", caption:"Функциональная кухня" },
-            { url: "images/photo_2026-04-21_11-32-41.jpg", caption:"Обеденная зона" },
-            { url: "images/photo_2026-04-21_11-33-09.jpg", caption:"Просторный коридор" },
-            { url: "images/photo_2026-04-21_11-33-32.jpg", caption:"Оборудованная ванная" },
-            { url: "images/photo_2026-04-21_11-33-51.jpg", caption:"Раздельный санузел" },
-            { url: "images/photo_2026-04-21_11-34-03.jpg", caption:"Вместительная лоджия" },
-            { url: "images/photo_2026-04-21_14-48-30.jpg", caption:"Ухоженный двор" },
-            { url: "images/photo_2026-04-21_14-50-50.jpg", caption:"Многоэтажный дом" }
-        ];
+                { url: "images/photo_2026-04-21_11-31-17.jpg", caption: "Просторная гостиная" },
+                { url: "images/photo_2026-04-21_11-31-44.jpg", caption: "Двухместная кровать" },
+                { url: "images/photo_2026-04-21_11-32-14.jpg", caption: "Уютная спальня" },
+                { url: "images/photo_2026-04-21_11-32-22.jpg", caption: "Мягкое освещение" },
+                { url: "images/photo_2026-04-21_11-32-43.jpg", caption: "Функциональная кухня" },
+                { url: "images/photo_2026-04-21_11-32-41.jpg", caption: "Обеденная зона" },
+                { url: "images/photo_2026-04-21_11-33-09.jpg", caption: "Просторный коридор" },
+                { url: "images/photo_2026-04-21_11-33-32.jpg", caption: "Оборудованная ванная" },
+                { url: "images/photo_2026-04-21_11-33-51.jpg", caption: "Раздельный санузел" },
+                { url: "images/photo_2026-04-21_11-34-03.jpg", caption: "Вместительная лоджия" },
+                { url: "images/photo_2026-04-21_14-48-30.jpg", caption: "Ухоженный двор" },
+                { url: "images/photo_2026-04-21_14-50-50.jpg", caption: "Многоэтажный дом" }
+            ];
 
             const galleryContainer = document.getElementById('galleryContainer');
             const lightbox = document.getElementById('lightbox');
@@ -199,6 +190,27 @@
             document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && lightbox?.classList.contains('active')) closeLightbox(); });
 
             renderGallery();
+
+            const addressBlock = document.getElementById('clickableAddress');
+            if (addressBlock) {
+                addressBlock.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const fullAddress = encodeURIComponent("Беларусь, Брестская область, Пинск, улица Ясельдовская, 7");
+                    const mapsUrl = `https://yandex.ru/maps/?text=${fullAddress}&z=17&l=map`;
+                    window.open(mapsUrl, '_blank', 'noopener,noreferrer');
+                });
+            }
+
+            const wrapper = document.querySelector('.address-wrapper');
+            if (wrapper && !wrapper.hasAttribute('data-map-listener')) {
+                wrapper.setAttribute('data-map-listener', 'true');
+                wrapper.style.cursor = 'pointer';
+                wrapper.addEventListener('click', (e) => {
+                    if (e.target.closest('.address')) return;
+                    const fullAddress = encodeURIComponent("Беларусь, Пинск, улица Ясельдовская, 7");
+                    window.open(`https://yandex.ru/maps/?text=${fullAddress}&z=17`, '_blank');
+                });
+            }
         })();
     </script>
 </body>
